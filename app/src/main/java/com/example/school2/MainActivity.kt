@@ -7,6 +7,7 @@ import androidx.cardview.widget.CardView
 
 class MainActivity : AppCompatActivity() {
     lateinit var myCardView:CardView
+    lateinit var myFindTeach:CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +18,11 @@ class MainActivity : AppCompatActivity() {
             val exit=Intent(this,MainActivity::class.java)
             startActivity(exit)
 
+        }
+        myFindTeach=findViewById(R.id.FindTutor)
+        myFindTeach.setOnClickListener {
+            val findtutor=Intent(this,FindTutorActivity::class.java)
+            startActivity(findtutor)
         }
 
 
