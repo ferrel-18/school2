@@ -18,11 +18,8 @@ class MainActivity : AppCompatActivity() {
             val exit=Intent(this,MainActivity::class.java)
             startActivity(exit)
 
-        }
-        myFindTeach=findViewById(R.id.FindTutor)
-        myFindTeach.setOnClickListener {
-            val findtutor=Intent(this,FindTutorActivity::class.java)
-            startActivity(findtutor)
+
+
         }
 
 
